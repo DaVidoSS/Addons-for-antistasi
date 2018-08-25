@@ -7,9 +7,9 @@
 <p>Every dead body will have an action RED for gather every single gear element of dead unit to nearest vehicle.<br />Every box besides base boxes will have an action (WHITE)for gather box inventory to nearest vehicle.<br />Vehicle need to be unlocked or his owner in your group. Vehicle also can not be unmobilized.</p>
 <p>2a. Add at bottom initFuncs.sqf</p>
 <p><code>ROB_fnc_collector = compile preProcessFileLineNumbers "Scripts\improvements\ROB_fnc_collector.sqf";</code></p>
-<p>ROB_fnc_remRobAction = compileFinal preProcessFileLineNumbers "Scripts\improvements\ROB_fnc_remRobAction.sqf";</p>
-<p>ROB_fnc_addactions = compileFinal preProcessFileLineNumbers "Scripts\improvements\ROB_fnc_addactions.sqf";</p>
-<p>ROB_fnc_getOwner = compileFinal preProcessFileLineNumbers "Scripts\improvements\ROB_fnc_getOwner.sqf";<code></code></p>
+<p><code>ROB_fnc_remRobAction = compileFinal preProcessFileLineNumbers "Scripts\improvements\ROB_fnc_remRobAction.sqf";</code></p>
+<p><code>ROB_fnc_addactions = compileFinal preProcessFileLineNumbers "Scripts\improvements\ROB_fnc_addactions.sqf";</code></p>
+<p><code></code><code>ROB_fnc_getOwner = compileFinal preProcessFileLineNumbers "Scripts\improvements\ROB_fnc_getOwner.sqf";</code></p>
 <p>&nbsp;</p>
 <p>2b. Add in initPlayerLocal.sqf at very below:</p>
 <p><code>0 = [] spawn ROB_fnc_addactions;</code></p>
@@ -29,7 +29,9 @@
 <p>5b. Add in description.ext at very below:</p>
 <p><code>#include "Scripts\improvements\description.hpp"</code></p>
 <p>***************************************************************************************<br /><strong>6.</strong> Holster your primary weapon on back. Hands free!<br /><strong>Require CBA A3</strong> for keybindings<br />Add in initPlayerLocal.sqf at very below:</p>
-<p><code>#include "\a3\editor_f\Data\Scripts\dikCodes.h"</code><br /><code>0 = [DIK_MULTIPLY] execVM "Scripts\improvements\holsterWeapon.sqf";</code></p>
+<p><code>#include "\a3\editor_f\Data\Scripts\dikCodes.h"</code></p>
+<p><code></code><br /><code>0 = [DIK_MULTIPLY] execVM "Scripts\improvements\holsterWeapon.sqf";</code></p>
+<p><code></code></p>
 <p>DIK_MULTIPLY is NUM_* key on numeric keyboard<br />You can change it to any other key: https://community.bistudio.com/wiki/DIK_KeyCodes</p>
 <p>***************************************************************************************</p>
 <p><strong>7.</strong> Disable vehicles randomization (every player will see the same color of vehicle).<br />Warning!! You will see always the same vehicle for each vehicle type (boring)<br />Add in description.ext after line //showGroupIndicator = 1:</p>
