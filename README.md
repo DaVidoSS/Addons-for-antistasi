@@ -12,7 +12,7 @@
 <p><code>compileFinal preProcessFileLineNumbers "Scripts\improvements\ROB_fnc_remRobAction.sqf";</code></p>
 <p><code>ROB_fnc_addactions = </code></p>
 <p><code>compileFinal preProcessFileLineNumbers "Scripts\improvements\ROB_fnc_addactions.sqf";</code></p>
-<p><code>ROB_fnc_getOwner = </code></p>
+<p><code></code><code>ROB_fnc_getOwner = </code></p>
 <p><code>compileFinal preProcessFileLineNumbers "Scripts\improvements\ROB_fnc_getOwner.sqf";</code></p>
 <p>&nbsp;</p>
 <p>2b. Add in initPlayerLocal.sqf at very below:</p>
@@ -43,13 +43,15 @@
 <p>***************************************************************************************</p>
 <p><strong>8.</strong> CHVD View and terrain adjustment by Champ-1.</p>
 <p><strong>Require CBA for keybindings</strong></p>
-<p>8a.Add in initPlayerLocal.sqf at very below:</p>
+<p>8a. Download&nbsp; <a href="http://www.armaholic.com/page.php?id=27390">CH View Distance Script</a> ,</p>
+<p>unpack and copy CHVD directory to mission <span style="text-decoration: underline;">root\Scripts\improvements\</span>&nbsp; directory</p>
+<p>8b. Add in initPlayerLocal.sqf at very below:</p>
 <p><code>CHVD_allowNoGrass = true;</code><br /><code>CHVD_maxView = distanciaSPWN1;</code><br /><code>CHVD_maxObj = distanciaSPWN1;</code></p>
-<p>8.b Add in description.ext after line #include "JeroenArsenal\functions.hpp"</p>
+<p>8.c Add in description.ext after line #include "JeroenArsenal\functions.hpp"</p>
 <p><code>#include "Scripts\improvements\CHVD\CfgFunctions.hpp"</code></p>
-<p>8.c Add in description.ext at very below:</p>
+<p>8.d Add in description.ext at very below:</p>
 <p><code>#include "Scripts\improvements\CHVD\dialog.hpp"</code></p>
-<p>8.d Copy Scripts\improvements\stringtable.xml to mission root directory (A3-Antistasi.Altis)</p>
+<p>8.e Copy Scripts\improvements\stringtable.xml to mission root directory (A3-Antistasi.Altis)</p>
 <p>***************************************************************************************</p>
 <p><strong>Links:</strong></p>
 <p><a href="http://www.armaholic.com/page.php?id=27390"> CH View Distance Script</a></p>
