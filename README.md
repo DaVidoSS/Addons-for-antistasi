@@ -19,7 +19,7 @@
 <p><br />4a2. Without auto channel freq but still with proper radio code for captured enemy vehicles.<br />Add in init.sqf at very below:</p>
 <p><code>0 = [false] execVM "Scripts\improvements\TFAR_autofreq.sqf";</code></p>
 <p>***************************************************************************************</p>
-<p><strong>5.</strong> Vehicle auto flip. Adds event fired when vehicle is upturned. <br />After crew leave vehicle and go about 10m away vehicle will automatically turn back to normal position.<br /><strong>Require CBA A3</strong> for CBA XEH</p>
+<p><strong>5.</strong> Vehicle auto flip. Adds event fired when vehicle is upturned. It also adds small screen info when using garage.<br />After crew leave vehicle and go about 10m away vehicle will automatically turn back to normal position.<br /><strong>Require CBA A3</strong> for CBA XEH</p>
 <p>5a. Add at bottom initFuncs.sqf</p>
 <p><code>VEH_fnc_xehInit = compileFinal preProcessFileLineNumbers "Scripts\improvements\VEH_fnc_xehInit.sqf";</code></p>
 <p>5b. Add in description.ext at very below:</p>
