@@ -5,8 +5,8 @@ You can use them all or some
 
 1. copy improvements folder into Scripts folder 
 
+2. Automatic gear collector for dead corpse and boxes.
 
-2. Automatic gear collector for dead corpse and boxes. 
  Every dead body will have an action RED for gather every single gear element of dead unit to nearest vehicle.
  Every box besides base boxes will have an action (WHITE)for gather box inventory to nearest vehicle.
  Vehicle need to be unlocked or his owner in your group. Vehicle also can not be unmobilized.
@@ -18,11 +18,9 @@ You can use them all or some
  ROB_fnc_addactions = compileFinal preProcessFileLineNumbers "Scripts\improvements\ROB_fnc_addactions.sqf";
  ROB_fnc_getOwner = compileFinal preProcessFileLineNumbers "Scripts\improvements\ROB_fnc_getOwner.sqf";
 
-
 2b. Add in initPlayerLocal.sqf at very below:
 
  0 = [] spawn  ROB_fnc_addactions;
-
 
 3. Current client/server/HC performance load displayed on map
  This will show your fps count, server load, and hc client constantly on the map in right bottom corner.
@@ -63,11 +61,9 @@ Require CBA for CBA XEH
  #include "Scripts\improvements\description.hpp"
 
 
-
 6. Holster your primary weapon on back. Hands free!
 Require CBA for keybindings
-
-6.a Add in initPlayerLocal.sqf at very below:
+Add in initPlayerLocal.sqf at very below:
 
  #include "\a3\editor_f\Data\Scripts\dikCodes.h"
  0 = [DIK_MULTIPLY] execVM "Scripts\improvements\holsterWeapon.sqf";
@@ -75,14 +71,11 @@ Require CBA for keybindings
 DIK_MULTIPLY is NUM_* key on numeric keyboard
 You can change it to any other key: https://community.bistudio.com/wiki/DIK_KeyCodes
 
-
 7. Disable vehicles randomization (every player will see the same color of vehicle).
 Warning!! You will see always the same vehicle for each vehicle type (boring)
-
-7a. Add in description.ext after line  //showGroupIndicator = 1:
+Add in description.ext after line  //showGroupIndicator = 1:
 
  disableRandomization[] = {"AllVehicles"}; 
-
 
 8. CHVD View and terrain adjustment Require CBA for keybindings
 
