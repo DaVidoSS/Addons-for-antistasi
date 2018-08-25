@@ -12,7 +12,7 @@
 <p><code>compileFinal preProcessFileLineNumbers "Scripts\improvements\ROB_fnc_remRobAction.sqf";</code></p>
 <p><code>ROB_fnc_addactions = </code></p>
 <p><code>compileFinal preProcessFileLineNumbers "Scripts\improvements\ROB_fnc_addactions.sqf";</code></p>
-<p><code></code><code>ROB_fnc_getOwner = </code></p>
+<p><code>ROB_fnc_getOwner = </code></p>
 <p><code>compileFinal preProcessFileLineNumbers "Scripts\improvements\ROB_fnc_getOwner.sqf";</code></p>
 <p>&nbsp;</p>
 <p>2b. Add in initPlayerLocal.sqf at very below:</p>
