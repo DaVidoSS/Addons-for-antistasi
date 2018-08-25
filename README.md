@@ -6,10 +6,14 @@
 <p><strong>2.</strong>&nbsp; Automatic gear collector for dead corpse and boxes.</p>
 <p>Every dead body will have an action RED for gather every single gear element of dead unit to nearest vehicle.<br />Every box besides base boxes will have an action (WHITE)for gather box inventory to nearest vehicle.<br />Vehicle need to be unlocked or his owner in your group. Vehicle also can not be unmobilized.</p>
 <p>2a. Add at bottom initFuncs.sqf</p>
-<p><code>ROB_fnc_collector = compile preProcessFileLineNumbers "Scripts\improvements\ROB_fnc_collector.sqf";</code></p>
-<p><code>ROB_fnc_remRobAction = compileFinal preProcessFileLineNumbers "Scripts\improvements\ROB_fnc_remRobAction.sqf";</code></p>
-<p><code>ROB_fnc_addactions = compileFinal preProcessFileLineNumbers "Scripts\improvements\ROB_fnc_addactions.sqf";</code></p>
-<p><code></code><code>ROB_fnc_getOwner = compileFinal preProcessFileLineNumbers "Scripts\improvements\ROB_fnc_getOwner.sqf";</code></p>
+<p><code>ROB_fnc_collector = </code></p>
+<p><code>compile preProcessFileLineNumbers "Scripts\improvements\ROB_fnc_collector.sqf";</code></p>
+<p><code>ROB_fnc_remRobAction = </code></p>
+<p><code>compileFinal preProcessFileLineNumbers "Scripts\improvements\ROB_fnc_remRobAction.sqf";</code></p>
+<p><code>ROB_fnc_addactions = </code></p>
+<p><code>compileFinal preProcessFileLineNumbers "Scripts\improvements\ROB_fnc_addactions.sqf";</code></p>
+<p><code></code><code>ROB_fnc_getOwner = </code></p>
+<p><code>compileFinal preProcessFileLineNumbers "Scripts\improvements\ROB_fnc_getOwner.sqf";</code></p>
 <p>&nbsp;</p>
 <p>2b. Add in initPlayerLocal.sqf at very below:</p>
 <p><code>0 = [] spawn ROB_fnc_addactions;</code></p>
