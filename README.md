@@ -1,7 +1,7 @@
 <p># Addons-for-antistasi</p>
 <p>This is set of 8 gameplay improvements for Barbolani's Antistasi.<br />You can use them all or some.</p>
 <p>***************************************************************************************</p>
-<p>1. copy improvements folder into Scripts folder in your copy of antistasi mission</p>
+<p>1. copy improvements directory into Scripts directory in your copy of antistasi mission</p>
 <p>***************************************************************************************</p>
 <p>2. Automatic gear collector for dead corpse and boxes.</p>
 <p>Every dead body will have an action RED for gather every single gear element of dead unit to nearest vehicle.<br /> Every box besides base boxes will have an action (WHITE)for gather box inventory to nearest vehicle.<br /> Vehicle need to be unlocked or his owner in your group. Vehicle also can not be unmobilized.</p>
@@ -37,5 +37,5 @@
 <p>#include "Scripts\improvements\CHVD\CfgFunctions.hpp"</p>
 <p>8.c Add in description.ext at very below:</p>
 <p>#include "Scripts\improvements\CHVD\dialog.hpp"</p>
-<p>8.d Copy Scripts\improvements\stringtable.xml to mission root folder (A3-Antistasi.Altis)</p>
+<p>8.d Copy Scripts\improvements\stringtable.xml to mission root directory (A3-Antistasi.Altis)</p>
 <p>***************************************************************************************<br />done</p>
