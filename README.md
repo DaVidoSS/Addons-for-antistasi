@@ -31,7 +31,8 @@
 <p><strong>7.</strong> Disable vehicles randomization (every player will see the same color of vehicle).<br />Warning!! You will see always the same vehicle for each vehicle type (boring)<br />Add in description.ext after line //showGroupIndicator = 1:</p>
 <p><code>disableRandomization[] = {"AllVehicles"};</code></p>
 <p>***************************************************************************************</p>
-<p><strong>8.</strong> CHVD View and terrain adjustment by Champ-1.Require CBA for keybindings</p>
+<p><strong>8.</strong> CHVD View and terrain adjustment by Champ-1.</p>
+<p><strong>Require CBA for keybindings</strong></p>
 <p>8a.Add in initPlayerLocal.sqf at very below:</p>
 <p><code>CHVD_allowNoGrass = true;</code><br /><code>CHVD_maxView = distanciaSPWN1;</code><br /><code>CHVD_maxObj = distanciaSPWN1;</code></p>
 <p>8.b Add in description.ext after line #include "JeroenArsenal\functions.hpp"</p>
