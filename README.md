@@ -38,4 +38,7 @@
 <p>8.c Add in description.ext at very below:</p>
 <p>#include "Scripts\improvements\CHVD\dialog.hpp"</p>
 <p>8.d Copy Scripts\improvements\stringtable.xml to mission root directory (A3-Antistasi.Altis)</p>
+<p>***************************************************************************************<br /></p>
+<p>External links:</p>
+<p>http://www.armaholic.com/page.php?id=27390</p>
 <p>***************************************************************************************<br />done</p>
