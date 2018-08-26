@@ -18,7 +18,7 @@
 <p>2b. Add in initPlayerLocal.sqf at very below:</p>
 <p><code>0 = [] spawn ROB_fnc_addactions;</code></p>
 <p>***************************************************************************************</p>
-<p><strong>3.</strong> Current client/server/HC performance load displayed on map<br />This will show your fps count, server load, and hc client constantly on the map in right bottom corner.<br />Marker text will change color according to current load.<br /><br />3a. Add in init.sqf at very below</p>
+<p><strong>3.</strong> Current client/server/HC performance load displayed on map<br />This will show your fps count, server load, and hc client constantly on the map in left bottom corner.<br />Marker text will change color according to current load.<br /><br />3a. Add in init.sqf at very below</p>
 <p><code>0 = [] execVM "Scripts\improvements\show_fps.sqf";</code></p>
 <p>***************************************************************************************</p>
 <p><strong>4.</strong> TFAR side improvements. Require Task Force Radio mod<br />By default if you take over enemy vehicle use LR and speak witch your team will be not available.<br />This will change this behavior on every vehicle in game.<br />After you add this every vehicle (civilian too) will have a LR radio with proper side coding. MP PVP friendly!</p>
