@@ -115,6 +115,7 @@ CHVD_maxObj = distanciaSPWN1;
 Links:
 
 CH View Distance Script http://www.armaholic.com/page.php?id=27390
+
 Barbolani's Antistasi https://github.com/A3Antistasi/A3-Antistasi
 
 ***************************************************************************************
