@@ -76,6 +76,7 @@ Require CBA A3 for keybindings
 Add in initPlayerLocal.sqf at very below:
 
 #include "\a3\editor_f\Data\Scripts\dikCodes.h"
+
 0 = [DIK_MULTIPLY] execVM "Scripts\improvements\holsterWeapon.sqf";
 
 DIK_MULTIPLY is NUM_* key on numeric keyboard
@@ -97,8 +98,11 @@ Require CBA for keybindings
 8a. Add in initPlayerLocal.sqf at very below:
 
 CHVD_allowNoGrass = true;
+
 CHVD_maxView = distanciaSPWN1;
+
 CHVD_maxObj = distanciaSPWN1;
+
 
 8.b Add in description.ext after line #include "JeroenArsenal\functions.hpp"
 
