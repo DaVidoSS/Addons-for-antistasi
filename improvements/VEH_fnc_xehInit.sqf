@@ -10,23 +10,6 @@ return VOID
 */
 params [["_vehicle",objNull,[objNull]]];
 
-// display vehicle name while using garage
-
-if (hasInterface) then {
-	if (!isNil "garageVeh") then {
-		if (garageVeh isEqualTo _vehicle) then {
-			0 = [_vehicle] spawn {
-				private _vehicle = param [0, objNull, [objNull]];
-				private _cfgVeh = configFile >> "cfgVehicles" >> typeOf _vehicle;
-				private _displayName = getText (_cfgVeh >> "displayName");
-				cutText [format ["<t color='#ffffff' size='3'>%1</t>",_displayName], "PLAIN", -1, true, true];
-				waitUntil {isNull _vehicle || speed  player > 0};
-				cutText ["","PLAIN"];
-			};
-		};
-	};
-};
-
 if (!isServer) exitWith {};
 if (!((getNumber (configFile >> "CfgVehicles" >> typeOf _vehicle >> "hasDriver")) isEqualTo 1)) exitWith {};
 

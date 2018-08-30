@@ -24,8 +24,8 @@ if (count _this < 8) then {
 };
 
 
-_viewDistValue = _sliderPos min CHVD_maxView max 0;
-_objViewDistValue = if (_modeVar isEqualTo 1) then {_sliderPos  * (call compile _percentVar) min CHVD_maxObj} else {_sliderPos min CHVD_maxObj};  // Check if percentage sync mode is used, if so use a percentage coefficient
+_viewDistValue = _sliderPos min distanciaSPWN max 0;
+_objViewDistValue = if (_modeVar isEqualTo 1) then {_sliderPos  * (call compile _percentVar) min distanciaSPWN} else {_sliderPos min distanciaSPWN};  // Check if percentage sync mode is used, if so use a percentage coefficient
 
 
 switch (_updateType) do { // 1 - VIEW, 2 - OBJ, 3 - BOTH, 0 - BOTH AND TERRAIN
