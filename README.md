@@ -58,7 +58,7 @@ Add in init.sqf at very below:
 
 ***************************************************************************************
 
-5. Vehicle auto flip. Adds event fired when vehicle is upturned. It also adds small screen info when using garage.
+5. Vehicle auto flip. Adds event fired when vehicle is upturned.
 After crew leave vehicle and go about 10m away vehicle will automatically turn back to normal position.
 Require CBA A3 for CBA XEH
 
@@ -98,10 +98,6 @@ Require CBA for keybindings
 8a. Add in initPlayerLocal.sqf at very below:
 
 CHVD_allowNoGrass = true;
-
-CHVD_maxView = distanciaSPWN1;
-
-CHVD_maxObj = distanciaSPWN1;
 
 
 8.b Add in description.ext after line #include "JeroenArsenal\functions.hpp"
