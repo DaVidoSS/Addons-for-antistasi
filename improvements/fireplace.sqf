@@ -11,10 +11,10 @@ player addAction [
 	"<t>Set Up Fireplace</t><img size='1' image='\a3\ui_f\data\IGUI\Cfg\Actions\Obsolete\ui_action_fire_in_flame_ca'/>",
 	{
 		params [["_target",objNull,[objNull]],["_unit",objNull,[objNull]]];
-		(AGLToASL (_unit modelToWorldVisual [0,1.5,0])) params ['_vx','_vy','_vz'];
+		(AGLToASL (_unit modelToWorldVisual [0,1.5,0])) params ["_vx","_vy","_vz"];
 		if !(isNull (objectParent _unit)) exitWith {hint "Really? While driving?"};
 		if (surfaceIsWater (position _unit)) exitWith {hint "Oh come on, you cant be that stupid!"}; 
-		if !(isTouchingGround _unit) exitWith {hint "Ok but hit the ground first!"};
+		if !(isTouchingGround _unit) exitWith {hint "Ok, but hit the ground first!"};
 		if !(count (lineIntersectsObjs [(AGLToASL (_unit modelToWorldVisual [0,1.5,0])), [_vx,_vy,(_vz + 20)]]) == 0) exitWith {hint "Open your eyes, you wanna burn something?"};
 		
 		_unit playMove "AinvPknlMstpSnonWnonDnon_medicUp3";
