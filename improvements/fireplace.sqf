@@ -32,4 +32,6 @@ player addAction [
 				},nil,0,true,true,"","true",3,false,"",""
 			]
 		] remoteExec ["addAction", [0,-2] select isDedicated,_campFire];	
-	},nil,0,false,true,"","isNull (_this getVariable ['mycampfire',objNull])",-1, false, "", ""];
+	},nil,0,false,true,"",
+	"isNull (_this getVariable ['mycampfire',objNull]) && {((animationState _this) in ['amovpsitmstpsnonwpstdnon_ground','amovpsitmstpslowwrfldnon','amovpsitmstpsnonwnondnon_ground'])}",
+	-1, false, "", ""];
