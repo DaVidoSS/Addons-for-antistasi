@@ -113,6 +113,10 @@ CHVD_allowNoGrass = true;
 ***************************************************************************************
 
 9. Craeting fireplace.
+
+Player can create fireplace on certain surfaces, but only one at time.
+To create another one last one need to be removed first.
+
 Add in initPlayerLocal.sqf at very below:
 
 0 = [] execVM "Scripts\improvements\fireplace.sqf";
