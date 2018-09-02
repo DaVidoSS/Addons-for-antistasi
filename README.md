@@ -112,6 +112,17 @@ CHVD_allowNoGrass = true;
 
 ***************************************************************************************
 
+9. Craeting fireplace.
+Add in initPlayerLocal.sqf at very below:
+
+0 = [] execVM "Scripts\improvements\fireplace.sqf";
+
+Add in onPlayerRespawn.sqf at very below:
+
+0 = [] execVM "Scripts\improvements\fireplace.sqf";
+
+***************************************************************************************
+
 Links:
 
 CH View Distance Script http://www.armaholic.com/page.php?id=27390
