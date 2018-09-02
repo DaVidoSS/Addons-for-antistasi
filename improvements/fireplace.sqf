@@ -18,7 +18,7 @@ player addAction [
 		if !(count (lineIntersectsObjs [(AGLToASL (_unit modelToWorldVisual [0,1.5,0])), [_vx,_vy,(_vz + 20)]]) == 0) exitWith {hint "Open your eyes, you wanna burn something?"};
 		
 		_unit playMove "AinvPknlMstpSnonWnonDnon_medicUp3";
-		sleep 6;
+		sleep 7;
 		private _campFire = createVehicle ["FirePlace_burning_F", (_unit modelToWorldVisual [0,1.5,0]), [], 0, "CAN_COLLIDE"];
 		_unit setVariable ["mycampfire",_campFire,false];
 		0 = [_campFire,
@@ -27,7 +27,7 @@ player addAction [
 				{
 					params [["_target",objNull,[objNull]],["_unit",objNull,[objNull]]];
 					_unit playMove "AinvPknlMstpSnonWnonDnon_medicUp3";
-					sleep 6;
+					sleep 7;
 					deleteVehicle _target;
 				},nil,0,true,true,"","true",3,false,"",""
 			]
